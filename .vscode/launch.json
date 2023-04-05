@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+
+  "configurations": [
+    {
+      "name": "Your own server",
+      "request": "launch",
+      "type": "al",
+      "port": 7049,
+      "environmentType": "OnPrem",
+      "server": "http://localhost",
+      "serverInstance": "BC180",
+      "authentication": "Windows",
+      "breakOnError": true,
+      "launchBrowser": true,
+      "enableLongRunningSqlStatements": true,
+      "enableSqlInformationDebugger": true,
+      "startupObjectId": 22,
+      "startupObjectType": "Page",
+      "tenant": "default",
+      "schemaUpdateMode": "ForceSync",
+      "dependencyPublishingOption": "Default"
+    }
+  ]
+}
