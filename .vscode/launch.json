@@ -15,7 +15,7 @@
       "launchBrowser": true,
       "enableLongRunningSqlStatements": true,
       "enableSqlInformationDebugger": true,
-      "startupObjectId": 22,
+      "startupObjectId": 50100,
       "startupObjectType": "Page",
       "tenant": "default",
       "schemaUpdateMode": "ForceSync",
