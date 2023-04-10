@@ -9,7 +9,7 @@ table 50102 Student
         {
             Caption = 'ID';
             DataClassification = ToBeClassified;
-            AutoIncrement= true;
+            AutoIncrement = true;
         }
         field(2; Name; Text[100])
         {
@@ -20,19 +20,19 @@ table 50102 Student
         {
             Caption = 'Phone No.';
             DataClassification = ToBeClassified;
-            ExtendedDatatype= PhoneNo;
+            ExtendedDatatype = PhoneNo;
         }
         field(4; "E-mail"; Text[100])
         {
             Caption = 'E-mail';
             DataClassification = ToBeClassified;
-            ExtendedDatatype=EMail;
+            ExtendedDatatype = EMail;
         }
         field(5; Website; Text[100])
         {
             Caption = 'Website';
             DataClassification = ToBeClassified;
-            ExtendedDatatype=URL;
+            ExtendedDatatype = URL;
         }
         field(6; Latitude; Decimal)
         {
@@ -54,9 +54,9 @@ table 50102 Student
             Caption = 'Active';
             DataClassification = ToBeClassified;
         }
-        
+
     }
-    
+
     keys
     {
         key(PK; ID)

@@ -8,18 +8,6 @@ table 50103 "Class Schedule"
         {
             DataClassification = ToBeClassified;
             TableRelation = Teacher;
-
-            trigger OnValidate()
-            var
-                recTeacher: Record Teacher;
-            begin
-                if xRec."Teacher ID" <> Rec."Teacher ID" then begin
-                    recTeacher.Reset();
-                    if recTeacher.Get("Teacher ID") then begin
-                        "Teacher Name" := recTeacher.Name;
-                    end;
-                end;
-            end;
         }
 
         field(2; "Line No."; Integer)
@@ -36,11 +24,16 @@ table 50103 "Class Schedule"
             trigger OnValidate()
             var
                 recClass: Record Class;
+                recTeacher: Record Teacher;
             begin
                 if xRec."Class ID" <> Rec."Class ID" then begin
                     recClass.Reset();
                     if recClass.Get("Class ID") then begin
                         "Class Name" := recClass.Name;
+                    end;
+                    recTeacher.Reset();
+                    if recTeacher.Get("Teacher ID") then begin
+                        "Teacher Name" := recTeacher.Name;
                     end;
                 end;
             end;
