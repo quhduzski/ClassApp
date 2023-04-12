@@ -5,6 +5,7 @@ page 50102 "Student List"
     PageType = List;
     SourceTable = Student;
     UsageCategory = Lists;
+    CardPageId = "Student Card";
 
     layout
     {

@@ -48,14 +48,18 @@ page 50104 "Class Schedule SubForm"
                     ApplicationArea = All;
                 }
 
-                field("Schedule End Time"; Rec."Schedule End Time")
-                {
-                    ApplicationArea = Al;
-                }
-
                 field(Duration; Rec.Duration)
                 {
                     ApplicationArea = All;
+                    trigger OnValidate();
+                    begin
+                        Rec."Schedule End Time" := Rec."Schedule Start Time" + Rec.Duration * 3600000;
+                    end;
+                }
+
+                field("Schedule End Time"; Rec."Schedule End Time")
+                {
+                    ApplicationArea = Al;
                 }
 
                 field("Teacher Name"; Rec."Teacher Name")

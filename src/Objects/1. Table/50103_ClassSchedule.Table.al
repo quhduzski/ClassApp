@@ -55,7 +55,7 @@ table 50103 "Class Schedule"
             DataClassification = ToBeClassified;
         }
 
-        field(7; Duration; Text[20])
+        field(7; Duration; Decimal)
         {
             DataClassification = ToBeClassified;
         }
